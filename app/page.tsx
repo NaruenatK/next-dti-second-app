@@ -1,6 +1,6 @@
 import Menubar from "./component/menubar/page"
 
-export default function Page() {
+export default async function Page({ params }: { params: Promise <{ id: string }> }) {
   return (
     <>
       <Menubar />
