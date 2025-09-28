@@ -1,6 +1,7 @@
 import Menubar from "./component/menubar/page"
 
 export default async function Page({ params }: { params: Promise <{ id: string }> }) {
+  const { id } = await params;
   return (
     <>
       <Menubar />
