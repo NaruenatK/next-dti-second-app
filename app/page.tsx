@@ -6,12 +6,10 @@ const bungee = Bungee({
   subsets: ["latin"],
 });
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ id: string }>;
+export default function Page({
+
 }) {
-  const { id } = await params;
+  // const { id } = await params;
 
   return (
     <>
